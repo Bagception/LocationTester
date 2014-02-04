@@ -78,7 +78,7 @@ public class MainActivity extends Activity implements Receiver{
 	private void requestLocation(){
 		String serviceString = ServiceNames.LOCATION_SERVICE;
 		Intent i = new Intent(serviceString);
-		i.putExtra(OurLocation.REQUEST_TYPE, OurLocation.LOCATION);
+		i.putExtra(OurLocation.REQUEST_TYPE, OurLocation.GETLOCATION);
 		i.putExtra("receiverTag", mResultreceiver);
 		log("sending request...");
 		startService(i);
